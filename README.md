@@ -1,5 +1,7 @@
 # 06 — Phishing Email Analyzer
 
+[![CI](https://github.com/BL3IP/phishing-email-analyzer/actions/workflows/ci.yml/badge.svg)](https://github.com/BL3IP/phishing-email-analyzer/actions/workflows/ci.yml)
+
 A zero-dependency Python tool that statically analyzes a `.eml` file for phishing indicators —
 the bread-and-butter of SOC Tier-1 triage. Parses headers, checks SPF/DKIM/DMARC, detects
 sender spoofing, extracts URLs/IOCs, flags dangerous attachments, and scores risk.
