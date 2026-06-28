@@ -1,0 +1,12 @@
+From: "GitHub" <noreply@github.com>
+Reply-To: noreply@github.com
+Return-Path: <bounce@github.com>
+To: user@example.com
+Subject: [GitHub] A new sign-in to your account
+Date: Mon, 27 Jun 2026 10:00:00 +0000
+Authentication-Results: mx.example.com; spf=pass smtp.mailfrom=github.com; dkim=pass header.d=github.com; dmarc=pass
+MIME-Version: 1.0
+Content-Type: text/plain; charset=UTF-8
+
+We noticed a new sign-in to your account. If this was you, no action is needed.
+Visit https://github.com/settings/security for details.

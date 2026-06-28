@@ -1,0 +1,24 @@
+From: "PayPal Support" <security@paypa1-alerts.com>
+Reply-To: collect@mailbox.ru
+Return-Path: <bounce@sketchy-host.tk>
+To: victim@example.com
+Subject: Urgent: Your account has been limited - verify immediately
+Date: Mon, 27 Jun 2026 09:00:00 +0000
+Authentication-Results: mx.example.com; spf=fail smtp.mailfrom=paypa1-alerts.com; dkim=fail header.d=paypa1-alerts.com; dmarc=fail
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="b1"
+
+--b1
+Content-Type: text/html; charset=UTF-8
+
+<html><body>
+Dear customer, your account is limited. <a href="http://192.0.2.45/verify-account">Verify now</a>.
+Please open the attached form.
+</body></html>
+--b1
+Content-Type: application/octet-stream; name="account-form.exe"
+Content-Disposition: attachment; filename="account-form.exe"
+Content-Transfer-Encoding: base64
+
+bm90LWEtcmVhbC1maWxl
+--b1--
