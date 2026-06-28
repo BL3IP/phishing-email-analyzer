@@ -120,8 +120,13 @@ def main(argv=None) -> int:
     parser.add_argument("eml", help="path to a .eml file")
     parser.add_argument("-f", "--format", choices=["table", "json"], default="table")
     args = parser.parse_args(argv)
-    with open(args.eml, encoding="utf-8", errors="ignore") as fh:
-        result = analyze(fh.read())
+    try:
+        with open(args.eml, encoding="utf-8", errors="ignore") as fh:
+            raw = fh.read()
+    except FileNotFoundError:
+        print(f"error: file not found: {args.eml}", file=sys.stderr)
+        return 2
+    result = analyze(raw)
 
     if args.format == "json":
         import json
